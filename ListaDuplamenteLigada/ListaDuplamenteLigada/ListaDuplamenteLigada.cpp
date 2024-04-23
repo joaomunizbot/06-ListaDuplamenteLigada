@@ -175,8 +175,9 @@ void excluirPrimeiroElemento()
 		cout << "Lista vazia!" << endl;
 		return;
 	}
-	if (primeiro->prox == NULL) {
-		primeiro = aux->prox;
+	if (primeiro==ultimo) {
+		primeiro =  NULL;
+		ultimo = NULL;
 		free(aux);
 		cout << "Primeiro elemento excluido" << endl;
 		return;
